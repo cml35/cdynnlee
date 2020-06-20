@@ -23,7 +23,7 @@ export default function Portfolio() {
         <div id='portfolio'>
             <br />
             <Grid container className={classes.root} spacing={4}>
-                <Grid item xs={12}>
+                <Grid item xs={12}> 
                     <Grid container justify="center" spacing={4}>
                         <Grid key={1} item>
                             <PortfolioCard 
