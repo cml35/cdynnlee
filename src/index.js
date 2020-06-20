@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/JosefinSans-Regular.ttf';
+import './fonts/GravitasOne-Regular.ttf';
+import 'fontsource-jost';
 
 ReactDOM.render(
   <React.StrictMode>
