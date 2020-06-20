@@ -16,8 +16,16 @@ export default function MainBody() {
         paddingTop: '100px'
     }
 
+    const mainBodyStyles = {
+        minHeight: '100vh',
+        overflow: 'hidden',
+        display: 'block',
+        position: 'relative',
+        paddingBottom: '100px' 
+    }
+
     return (    
-        <div id='main-body'>
+        <div id='main-body' style={mainBodyStyles}>
             <Switch>
                 <Route path="/Contact">    
                     <Contact />
