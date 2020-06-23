@@ -7,7 +7,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { useHistory, Link } from 'react-router-dom';
 
 export default function MainBottomBar() {
-    const history = useHistory();
 
     const bottomNavigation = {
         width: '100%',
@@ -23,12 +22,12 @@ export default function MainBottomBar() {
     return (
         <div id='main-bottom-bar' style={bottomNavigation}>
             <BottomNavigation>
-                <Link to='https://www.linkedin.com/in/claudynn-lee/'>
+                <a href='https://www.linkedin.com/in/claudynn-lee/'>
                     <BottomNavigationAction label="Linkedin" value="linkedin" icon={<LinkedInIcon />} />
-                </Link>
-                <Link to='https://medium.com/@claudynnlee53'>
+                </a>
+                <a href='https://medium.com/@claudynnlee53'>
                     <BottomNavigationAction label="Blog" value="blog" icon={<BookIcon />} />
-                </Link>
+                </a>
                 <Link>
                     <BottomNavigationAction label="Location" value="location" icon={<LocationOnIcon />} />
                 </Link>

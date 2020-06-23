@@ -17,7 +17,6 @@ export default function MainBody() {
     }
 
     const mainBodyStyles = {
-        minHeight: '100vh',
         overflow: 'hidden',
         display: 'block',
         position: 'relative',
@@ -46,6 +45,10 @@ export default function MainBody() {
                     <Home />
                 </Route>
             </Switch>
+        <br />
+        <br />
+        <br />
+        <br />
         </div>
     )
 }

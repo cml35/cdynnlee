@@ -43,8 +43,7 @@ export default function Home() {
             <Box style={boxStyles}>
                 <Container className={classes.root} maxWidth='md'>
                     <Typography style={titleStyles} variant="h4" component="Container">
-                        Hi, my name is Claudynn. 
-                        I'm a software developer with a focus on strong UI/UX designs.
+                        Hi, my name is <strong>Claudynn.</strong> I'm a software developer with a focus on strong UI/UX designs.
                     </Typography>
                     <Card style={cardStyles}>
                         <CardActionArea>
@@ -63,9 +62,13 @@ export default function Home() {
                 </Container>
                 <br />
                 <br />
+                <br />
+                <br />
                 <Typography variant="h4" component="Container">
                     What I do
                 </Typography>
+                <br />
+                <br />
                 <br />
                 <br />
                 <Grid container className={classes.root} spacing={4}>
@@ -85,7 +88,7 @@ export default function Home() {
                         </Grid>
                         <Grid key={3} item>
                             <PortfolioCard 
-                                projectName='Rapid prototyping and product development'     
+                                projectName='Rapid prototyping'     
                                 projectDescription='This application uses React and Laravel to rate different movies and tv shows available on different streaming services.'
                             />
                         </Grid>
