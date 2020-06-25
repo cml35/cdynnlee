@@ -39,11 +39,11 @@ export default function Home() {
     const classes = useStyles();
     
     return (
-        <div id='home'>
-            <Box style={boxStyles}>
+        <div id='home'> 
+            <Box style={boxStyles}> 
                 <Container className={classes.root} maxWidth='md'>
                     <Typography style={titleStyles} variant="h4" component="Container">
-                        Hi, my name is <strong>Claudynn.</strong> I'm a software developer with a focus on strong UI/UX designs.
+                        Hi, my name is <strong>Claudynn.</strong> I'm a software developer wit  h a focus on strong UI/UX designs.
                     </Typography>
                     <Card style={cardStyles}>
                         <CardActionArea>

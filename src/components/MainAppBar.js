@@ -21,7 +21,7 @@ export default function MainAppBar() {
     const classes = useStyles();
     return (
       <div id='main-app-bar'>
-        <AppBar position="static">
+        <AppBar style={{background: '#374785'}}position="static">
             <Toolbar>
             <Logo />
             <MainMenu />

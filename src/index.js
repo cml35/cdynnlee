@@ -6,10 +6,13 @@ import * as serviceWorker from './serviceWorker';
 import './fonts/JosefinSans-Regular.ttf';
 import './fonts/GravitasOne-Regular.ttf';
 import 'fontsource-jost';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ParallaxProvider>
+      <App />
+    </ParallaxProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
