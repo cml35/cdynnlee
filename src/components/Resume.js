@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ResumeCard from './ResumeCard';
 import EmploymentHistoryCard from './EmploymentHistoryCard';
 import AreaOfExpertise from './AreaOfExpertise';
@@ -7,7 +8,7 @@ import TechnicalSkills from './TechnicalSkills';
 import Interests from './Interests';
 import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
-import { Typography, Box } from '@material-ui/core';
+import { Typography, Box, Button } from '@material-ui/core';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const resumeStyles = {
@@ -32,6 +33,9 @@ export default function Resume() {
                 <ResumeCard title="Technical Skills" content={<TechnicalSkills/>}/>
                 <ResumeCard title="Interests" content={<Interests />}/>
             </Box>
+            <Link to="/files/Resume2020.pdf" target="_blank" download>
+                <Button>Download Resume</Button>
+            </Link>
         </div>
     )
 }
