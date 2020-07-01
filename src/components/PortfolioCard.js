@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function PortfolioCard({ projectName, projectDescription }) {
+export default function PortfolioCard({ projectName, projectDescription, icon }) {
     const classes = useStyles();
 
     return (
@@ -35,7 +35,7 @@ export default function PortfolioCard({ projectName, projectDescription }) {
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {projectName}
+                        {icon} {projectName}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         {projectDescription}

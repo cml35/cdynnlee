@@ -20,7 +20,7 @@ export default function ResumeCard({ title, content }) {
         <div id='resume-card'>
         <Card className={classes.root} variant="outlined">
         <CardContent>
-            <Typography>{title}</Typography>
+            <Typography style={{fontWeight: "550"}} variant='h5'>{title}</Typography>
             {content}
         </CardContent>
         <CardActions>

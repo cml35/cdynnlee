@@ -13,8 +13,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const resumeStyles = {
     textAlign: 'center',
-    margin: 'auto',
     paddingTop: '50px'
+}
+
+const buttonStyle = {
+    padding: '10px',
+    border: '1px solid',
+    letterSpacing: '2px',
+    textDecoration: 'none'
 }
 
 export default function Resume() {
@@ -33,8 +39,10 @@ export default function Resume() {
                 <ResumeCard title="Technical Skills" content={<TechnicalSkills/>}/>
                 <ResumeCard title="Interests" content={<Interests />}/>
             </Box>
+            <br />
+            <br />
             <Link to="/files/Resume2020.pdf" target="_blank" download>
-                <Button>Download Resume</Button>
+                <Button style={buttonStyle} variant="contained" color="primary" size='medium'>Download Resume</Button>
             </Link>
         </div>
     )

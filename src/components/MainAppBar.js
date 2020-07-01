@@ -28,7 +28,6 @@ export default function MainAppBar() {
             <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
                 <MenuIcon />
             </IconButton>
-            {/* <Button color="inherit">Login</Button> */}
             </Toolbar>
         </AppBar>
       </div>
