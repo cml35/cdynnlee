@@ -25,7 +25,7 @@ const buttonStyle = {
 
 export default function Resume() {
     return (
-        <div id='resume' style={resumeStyles}>
+        <div id='resume' style={resumeStyles}>ome
             <Typography variant='h3'>Claudynn Lee</Typography>
             <br />
             <br />

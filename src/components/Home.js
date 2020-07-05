@@ -6,6 +6,7 @@ import ProfileImage from '../media/profile_photo.jpg';
 import WebIcon from '@material-ui/icons/Web';
 import ArtTrackIcon from '@material-ui/icons/ArtTrack';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import MediaQuery from 'react-responsive';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,7 +54,7 @@ export default function Home() {
             <Box style={boxStyles}> 
                 <Container className={classes.root} maxWidth='md'>
                     <Typography style={titleStyles} variant="h4" component="Container">
-                        Hi, my name is <strong>Claudynn.</strong> I'm a software developer wit  h a focus on strong UI/UX designs.
+                        Hi, my name is <strong>Claudynn.</strong> I'm a software developer with a focus on strong UI/UX designs.
                     </Typography>
                     <img style={imageStyles} src={ProfileImage} alt='profile_photo'/>
                     <br />
@@ -83,8 +84,8 @@ export default function Home() {
                         <Grid key={2} item>
                             <PortfolioCard 
                                 icon={<WebIcon />}
-                                projectName='Web development' 
-                                projectDescription='Developing different web applications from static websites to small cloud based applications.'
+                                projectName='Software development' 
+                                projectDescription='Developing different applications from static websites to small cloud based applications.'
                             />
                         </Grid>
                         <Grid key={3} item>
