@@ -38,10 +38,6 @@ export default function Home() {
         paddingTop: '100px'
     }
 
-    const cardStyles = {
-        width: 900,
-    }
-
     const imageStyles = {
         height: '250px',
         width: '250px'

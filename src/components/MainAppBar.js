@@ -8,12 +8,18 @@ import Logo from './Logo.js';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
+      background: '#374785'
     },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
+    mobileMenuStyles: {
+      [theme.breakpoints.up('lg')]: {
+        visibility: 'hidden',
+      },
+      [theme.breakpoints.up('md')]: {
+        visibility: 'hidden',
+      },
+      [theme.breakpoints.down('xs')]: {
+        visibility: 'visible',
+      },
     },
   }));
 
@@ -21,11 +27,11 @@ export default function MainAppBar() {
     const classes = useStyles();
     return (
       <div id='main-app-bar'>
-        <AppBar style={{background: '#374785'}}position="static">
+        <AppBar className={classes.root} position="static">
             <Toolbar>
             <Logo />
             <MainMenu />
-            <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton className={classes.mobileMenuStyles} color="inherit">
                 <MenuIcon />
             </IconButton>
             </Toolbar>
