@@ -17,8 +17,12 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT}}
           source: "."
-          target: "/var/www/mywebsite"
+          target: ${{ secrets.PATH }}
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
